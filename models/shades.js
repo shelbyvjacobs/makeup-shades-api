@@ -17,21 +17,8 @@ const shadeSchema = new Schema({
     },
     "hex": {
         type: String,
-        required: true,
         minlength: 1,
         trimmed: true
-    },
-    "H": {
-        type: Number
-    },
-    "S": {
-        type: Number
-    },
-    "V": {
-        type: Number
-    },
-    "L": {
-        type: Number
     },
     "group": {
         type: Number
