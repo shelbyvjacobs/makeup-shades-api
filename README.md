@@ -4,7 +4,7 @@
 This project was to build a JSON API from the ground up.
 
 ### Features
-The API is comprised of a JSON file with raw data (from [here](https://github.com/the-pudding/data/tree/master/makeup-shades), a model built with Mongoose, Mongoose queries with RESTful paths, and a Node.js seed file.
+The API is comprised of a JSON file with raw data (from [here](https://github.com/the-pudding/data/tree/master/makeup-shades)), a model built with Mongoose, Mongoose queries with RESTful paths, and a Node.js seed file.
 
 ### Getting Started
 1. Have MongoDB and Node.js installed
