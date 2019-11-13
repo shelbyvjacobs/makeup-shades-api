@@ -28,9 +28,11 @@ const shadeSchema = new Schema({
         minlength: 1,
         trimmed: true
     },
-    "group": {
-        type: Number
-    }
+    "hue": Number,
+    "saturation": Number,
+    "value": Number,
+    "lightness": Number,
+    "group": Number
 });
 
 const shade = mongoose.model("shade", shadeSchema);

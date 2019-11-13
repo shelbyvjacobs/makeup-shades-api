@@ -8,6 +8,10 @@ const shadeData = shadesJSON.map(item => {
     shade.product = item.product
     shade.productShort = item.product_short
     shade.hex = item.hex
+    shade.hue = item.H
+    shade.saturation = item.S
+    shade.value = item.V
+    shade.lightness = item.L
     shade.group = item.group
     return shade
 })
