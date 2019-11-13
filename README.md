@@ -7,16 +7,17 @@ This project was to build a JSON API from the ground up.
 The API is comprised of a JSON file with raw data (from [here](https://github.com/the-pudding/data/tree/master/makeup-shades)), a model built with Mongoose, Mongoose queries with RESTful paths, and a Node.js seed file.
 
 ### Getting Started
-1. Have MongoDB and Node.js installed
-2. Package.json
-```
-npm init
-```
-3. install Mongoose, Express, and Body-Parser
-```
-npm install mongoose express body-parser
-```
-4. 
+#### Base URL: (url here)
+| Query | Path | Description | Additional Information |
+|:--------:|:-------:| ------------| ----|
+| **POST** | `/shades` | create a new object |  |
+| **GET** | `/shades` | find all objects in database |  |
+| **GET** | `/shades/brand/{brandShort}` | find by brand name | String. `brandShort` is a shortened version of the brand name. For instance, mb for Maybelline. |
+| **GET** | `/shades/product/{productShort}` | find by product name | String. `productShort` is a shortened version of the product name. For instance, dw for Double Wear |
+| **GET** | `/shades/hex/{hex}` | find by hex color code (no #) | String. |
+| **GET** | `/shades/group/{group}` | find by country | Number. <br/>&bull; `2`: United States Best Sellers. <br/>&bull; `5`: Nigerian Best Sellers. <br/>&bull; `6`: Japanese Best Sellers. <br/>&bull; `7`: Indian Best Sellers. |
+| **GET** | `/shades/{id}/edit` | find an object by the id and update the hex color code | String. |
+| **DELETE** | `/shades/{id}` | find an object by the id and delete the entire object | String. |
 
 ### Goals
 * Build an API using Express and Mongoose.
