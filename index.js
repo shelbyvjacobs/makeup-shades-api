@@ -20,29 +20,29 @@ app.post("/shades", function (req, res){
     })
 })
 
-    app.get("/shades/brand/:brand", function(req, res) {
-        Shade.find({ brand: req.params.brand }).then(shades => {
-        res.json(shades);
-        });
+app.get("/shades/brand/:brand", function(req, res) {
+    Shade.find({ brand: req.params.brand }).then(shades => {
+    res.json(shades);
     });
+});
 
-    app.get("/shades/product/:product", function(req, res) {
-        Shade.find({ product: req.params.product }).then(shades => {
-        res.json(shades);
-        });
+app.get("/shades/product/:product", function(req, res) {
+    Shade.find({ product: req.params.product }).then(shades => {
+    res.json(shades);
     });
+});
 
-    app.get("/shades/hex/:hex", function(req, res) {
-        Shade.find({ hex: req.params.hex }).then(shades => {
-        res.json(shades);
-        });
+app.get("/shades/hex/:hex", function(req, res) {
+    Shade.find({ hex: req.params.hex }).then(shades => {
+    res.json(shades);
     });
+});
 
-    app.get("/shades/group/:group", function(req, res) {
-        Shade.find({ group: req.params.group }).then(shades => {
-        res.json(shades);
-        });
+app.get("/shades/group/:group", function(req, res) {
+    Shade.find({ group: req.params.group }).then(shades => {
+    res.json(shades);
     });
+});
 
 app.get("/shades/:id/edit", function(req, res) {
     Shade.findOneAndUpdate(
