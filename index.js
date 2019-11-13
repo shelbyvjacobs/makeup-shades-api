@@ -8,15 +8,15 @@ mongoose.set('useFindAndModify', false);
 
 app.use(parser.json());
 
-app.get("/shades", function (req, res) {
-    Shade.find({}).then(shades => {
-        res.json(shades);
-    })
-})
-
 app.post("/shades", function (req, res){
     Shade.create(req.body).then(shades => {
         res.json(shades)
+    })
+})
+
+app.get("/shades", function (req, res) {
+    Shade.find({}).then(shades => {
+        res.json(shades);
     })
 })
 
