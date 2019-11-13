@@ -1,5 +1,3 @@
-//model schema
-
 const mongoose = require("../db/connections");
 
 const Schema = mongoose.Schema;
