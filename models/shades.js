@@ -8,10 +8,20 @@ const shadeSchema = new Schema({
         minlength: 1,
         trimmed: true
     },
+    "brandShort": {
+        type: String,
+        minlength: 1,
+        trimmed: true
+    },
     "product": {
         type: String,
         trimmed: true,
         minlength: 1
+    },
+    "productShort": {
+        type: String,
+        minlength: 1,
+        trimmed: true
     },
     "hex": {
         type: String,
@@ -24,4 +34,4 @@ const shadeSchema = new Schema({
 });
 
 const shade = mongoose.model("shade", shadeSchema);
-module.exports = shade; 
+module.exports = shade;

@@ -20,14 +20,26 @@ app.get("/shades", function (req, res) {
     })
 })
 
-app.get("/shades/brand/:brand", function(req, res) {
-    Shade.find({ brand: req.params.brand }).then(shades => {
+// app.get("/shades/brand/:brand", function(req, res) {
+//     Shade.find({ brand: req.params.brand }).then(shades => {
+//     res.json(shades);
+//     });
+// });
+
+app.get("/shades/brand/:brandShort", function(req, res) {
+    Shade.find({ brandShort: req.params.brandShort }).then(shades => {
     res.json(shades);
     });
 });
 
-app.get("/shades/product/:product", function(req, res) {
-    Shade.find({ product: req.params.product }).then(shades => {
+// app.get("/shades/product/:product", function(req, res) {
+//     Shade.find({ product: req.params.product }).then(shades => {
+//     res.json(shades);
+//     });
+// });
+
+app.get("/shades/product/:productShort", function(req, res) {
+    Shade.find({ productShort: req.params.productShort }).then(shades => {
     res.json(shades);
     });
 });

@@ -4,7 +4,9 @@ const Shade = require("../models/shades");
 const shadeData = shadesJSON.map(item => {
     const shade = {}
     shade.brand = item.brand
+    shade.brandShort = item.brand_short
     shade.product = item.product
+    shade.productShort = item.product_short
     shade.hex = item.hex
     shade.group = item.group
     return shade
