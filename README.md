@@ -1,6 +1,8 @@
 # makeup-shades-api
 
 ## Description & Features
+The Makeup Shades API contains information about the makeup foundations colors in the United States, Nigeria, India, and Japan. Each object contains information on the brand, the product name, the hexidecimal color code, HSL and HSV color codes, and the the country where it is most popular.
+
 This project was to build a JSON API from the ground up. The API is comprised of a JSON file with raw data (from [here](https://github.com/the-pudding/data/tree/master/makeup-shades)), a model built with Mongoose, Mongoose queries with RESTful paths, and a Node.js seed file.
 
 ## Getting Started
@@ -11,8 +13,8 @@ This project was to build a JSON API from the ground up. The API is comprised of
 |:--------:|:-------:| ------------| ----|
 | **POST** | `/shades` | create a new object |  |
 | **GET** | `/shades` | find all objects in database |  |
-| **GET** | `/shades/brand/{brandShort}` | find by brand name | String. `brandShort` is a shortened version (2-3 characters) of the `brand`. For instance, `mb` for Maybelline. For more information, see *table 2*. |
-| **GET** | `/shades/product/{productShort}` | find by product name | String. `productShort` is a shortened version of the `product`. For instance, `dw` for Double Wear. For more information, see *table 2*. |
+| **GET** | `/shades/brand/{brandShort}` | find by brand name | String. `brandShort` is a shortened version (2-3 characters) of the `brand`. For more information, see *table 2*. |
+| **GET** | `/shades/product/{productShort}` | find by product name | String. `productShort` is a shortened version (2-3 characters) of the `product`. For more information, see *table 2*. |
 | **GET** | `/shades/hex/{hex}` | find by hexidecimal color code (does not include # symbol). | String. |
 | **GET** | `/shades/group/{group}` | find by country | Number. <br/>&bull; `2`: United States Best Sellers. <br/>&bull; `5`: Nigerian Best Sellers. <br/>&bull; `6`: Japanese Best Sellers. <br/>&bull; `7`: Indian Best Sellers. |
 | **GET** | `/shades/{id}/edit` | find an object by the id and update the hexidecimal color code | String. |
