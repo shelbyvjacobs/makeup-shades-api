@@ -1,7 +1,7 @@
 # makeup-shades-api
 
 ## Description & Features
-The Makeup Shades API contains information about the makeup foundations colors in the United States, Nigeria, India, and Japan. Each object contains information on the brand, the product name, the hexidecimal color code, HSL and HSV color codes, and the the country where it is most popular.
+The Makeup Shades API contains information about makeup foundations colors in the United States, Nigeria, India, and Japan. Each object contains information on the brand, the product name, the hexidecimal color code, HSL and HSV color codes, and the the country where it is most popular.
 
 This project was to build a JSON API from the ground up. The API is comprised of a JSON file with raw data (from [here](https://github.com/the-pudding/data/tree/master/makeup-shades)), a model built with Mongoose, Mongoose queries with RESTful paths, and a Node.js seed file.
 
