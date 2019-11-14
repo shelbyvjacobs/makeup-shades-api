@@ -23,7 +23,7 @@ This project was to build a JSON API from the ground up. The API is comprised of
 *Table 2*
 
 | `brand` | `brandShort` | `product` | `productShort` |
-|:----:|----------|-------| --------|
+|----|----------|-------| --------|
 | Maybelline | mb | Fit Me | fmf |
 |  |  | Fit Me Matte | fmm |
 | bareMinerals | bm | barePro | pro |

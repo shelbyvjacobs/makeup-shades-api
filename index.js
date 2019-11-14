@@ -20,23 +20,11 @@ app.get("/shades", function (req, res) {
     })
 })
 
-// app.get("/shades/brand/:brand", function(req, res) {
-//     Shade.find({ brand: req.params.brand }).then(shades => {
-//     res.json(shades);
-//     });
-// });
-
 app.get("/shades/brand/:brandShort", function(req, res) {
     Shade.find({ brandShort: req.params.brandShort }).then(shades => {
     res.json(shades);
     });
 });
-
-// app.get("/shades/product/:product", function(req, res) {
-//     Shade.find({ product: req.params.product }).then(shades => {
-//     res.json(shades);
-//     });
-// });
 
 app.get("/shades/product/:productShort", function(req, res) {
     Shade.find({ productShort: req.params.productShort }).then(shades => {
@@ -72,6 +60,8 @@ app.delete("/shades/:id", function(req, res) {
     })
 })
 
-app.listen(3000, () =>
-    console.log("Listening for those makeup shades!")
-)
+app.set("port", process.env.PORT || 8080);
+
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
+});
